@@ -1,8 +1,8 @@
-35027
+5553
 /home/dbuchan/Course_Dev/docker_containers/adv_web_dev_topic_3_docker/files/tmp_db
-1607443556
+1607508727
 5432
 /var/run/postgresql
 localhost
-  5432001    131106
+  5432001        32
 ready   

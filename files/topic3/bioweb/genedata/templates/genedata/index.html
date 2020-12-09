@@ -1,18 +1,15 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <h1>D.Bucheria Genes</h1>
-    <table>
-      <tr><th>Gene ID</th></tr>
+{% extends "./base.html" %}
 
-      {% for gene in genes %}
-        <tr><td><a href="/gene/{{gene.pk}}" >{{ gene }}</a></td></tr>
-      {% endfor %}
-    </table>
+{% block content %}
     <h2>Select gene location</h2>
     <a href="/list/Chromosome">Chromosome</a> OR <a href="/list/Plasmid">Plasmid</a>
     <h2>Show Positive Chromosome</h2>
     <a href="/poslist/">Show This List</a>
-  </body>
-</html>
+    <br />
+    <h2>Create EC Entry</h2>
+    <a href="/create_ec/">Add a EC Entry</a>
+    <br />
+    <h2>Create Gene Entry</h2>
+    <a href="/create_gene/">Add Gene Entry To DB</a>
+    <br />
+{% endblock %}
